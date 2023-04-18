@@ -1,0 +1,39 @@
+# ██████      ██████         ██ 
+# ██   ██     ██   ██        ██ 
+# ██████      ██████         ██ 
+# ██          ██   ██        ██ 
+# ██ ██       ██   ██ ██     ██ ██
+# Players     Require        Items
+
+
+# ATTENZIONE: A CAUSA DEL FORMATO .YML, DOPO I DUE PUNTI DI OGNI SEZIONE
+# ANDRA' LASCIATO UNO SPAZIO ALTRIMENTI VERRA' RITENUTO INVALIDO IL FILE. RICORDALO.
+
+Dates:
+  ActivationDate:
+
+  DeactivationDate:
+
+TitleOnSuccessfulGive:
+  TitleUponFirstAccess: '§fEcco il tuo §6regalo§f!'
+
+  SubtitleUponFirstAccess: '§fDa §eMy§aVanilla'
+
+  FadeIn: 10
+
+  Stay: 70
+
+  FadeOut: 20
+
+TitleOnUnsuccessfulGive:
+  TitleUponFirstAccess: '§4§lATTENZIONE!'
+
+  SubtitleUponFirstAccess: '§cNon puoi ottenere gli oggetti svuota il tuo inventario e rientra!'
+
+  FadeIn: 10
+
+  Stay: 70
+
+  FadeOut: 20
+
+Stand-by: false

@@ -1,0 +1,31 @@
+name: PlayersRequireItems
+main: me.pri.maven.PlayersRequireItems
+version: 1.5.0
+author: TheGaBr0_
+api-version: 1.19
+
+commands:
+  playersrequireitems:
+    aliases: [irp]
+    description:  Comando principale
+    permission: pri
+    permission-message: Non hai il permesso di eseguire questo comando!
+
+
+permissions:
+  pri.*:
+    default: op
+    description: Da accesso a tutti i comandi
+    children:
+      pri: true
+      pri.reload: true
+      pri.help: true
+  pri:
+    default: false
+    description: Da accesso ai comandi di P.R.I.
+  pri.reload:
+    default: false
+    description: Da accesso al comando reload
+  pri.help:
+    default: false
+    description: Da accesso al comando help
