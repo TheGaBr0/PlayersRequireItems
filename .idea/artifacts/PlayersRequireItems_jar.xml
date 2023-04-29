@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PlayersRequireItems:jar">
+    <output-path>$PROJECT_DIR$/../../../minecraft/test/plugins</output-path>
+    <root id="archive" name="PlayersRequireItems.jar">
+      <element id="module-output" name="PlayersRequireItems" />
+    </root>
+  </artifact>
+</component>

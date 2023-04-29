@@ -10,16 +10,22 @@ import java.io.File;
 
 public class PlayersRequireItems extends JavaPlugin{
 
-    public ItemsManager itemsManager = new ItemsManager(this);
-    public PlayersJoinedManager playersJoinedManager = new PlayersJoinedManager(this);
-    public FileRemover remover = new FileRemover(this);
-    public FileBuilder builder = new FileBuilder(this);
-    public EventsManager eventManager = new EventsManager(this);
-    public FileChecker checker = new FileChecker(this);
+    public ItemsManager itemsManager;
+    public PlayersJoinedManager playersJoinedManager;
+    public FileRemover remover;
+    public FileBuilder builder;
+    public EventsManager eventManager;
+    public FileChecker checker;
 
     @Override
     public void onEnable() {
-        getLogger().info("has been enabled!");
+
+        itemsManager = new ItemsManager(this);
+        playersJoinedManager = new PlayersJoinedManager(this);
+        remover = new FileRemover(this);
+        builder = new FileBuilder(this);
+        eventManager = new EventsManager(this);
+        checker = new FileChecker(this);
 
         initialize();
 
@@ -35,6 +41,7 @@ public class PlayersRequireItems extends JavaPlugin{
 
         getCommand("playersrequireitems").setExecutor(new PriManager(this));
 
+        getLogger().info("has been enabled!");
 
     }
 
